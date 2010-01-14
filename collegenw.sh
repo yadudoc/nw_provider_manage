@@ -4,7 +4,7 @@
 #   Author   @ Yadu Nand B
 #	Email    @ yadudoc1729@gmail.com
 #	Date     @ 13/1/10
-#   Version  @ 0.5
+#   Version  @ 0.6
 #
 #            			BASIC INSTRUCTIONS
 #	Script needs to be run as super-user
@@ -85,12 +85,8 @@ done ;
 
 
 
+#ip route add 192.168.1.0/24 dev $IF src 192.168.1.10 table $PR
+#ip route add default via 192.168.1.1 table $PR
+#ip rule add from 192.168.1.10 table $PR
 
-
-#ip route add 192.168.1.0/24 dev eth1 src 192.168.1.10 table bsnl
-#ip route add default via 192.168.1.1 table bsnl
-#ip route add 192.168.0.0/24 dev eth2 src 192.168.0.10 table tata
-#ip route add default via 192.168.0.1 table tata
-#ip rule add from 192.168.1.10 table bsnl
-#ip rule add from 192.168.0.10 table tata
 #ip route add default scope global nexthop via 192.168.1.1 dev eth1 weight 1 nexthop via 192.168.0.1 dev eth2 weight 4
