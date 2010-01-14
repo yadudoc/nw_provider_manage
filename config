@@ -1,0 +1,9 @@
+configured 
+# uncomment first line if configured
+
+ip_address			gateway 			interface	weight	provider
+
+192.168.233.121 	121.131.132.131		eth0		1		adsl
+192.168.233.120		121.131.132.101		eth1		1		tata
+
+
