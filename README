@@ -1,0 +1,11 @@
+The scripts are meant for the Engineering colleges in kerala,primary Polytechnic colleges. There are moves by the govt. to provide multiple connections ( > 5 ) of bandwidth around 500kbps to these colleges. In such scenarios its convenient to configure a central server which routes all the requests rather than individual buildings/departments using separate lines. 
+
+This addresses the problem of load sharing among the different lines as well as handling of cases of individual lines failing.
+
+The approach is to set route tables to properly route the requests. The scripts at present require the user to setup up a config file which contains the details of the individual lines. Please see the config file which is more or less self explanatory. 
+
+TODO :
+1. Add code to get information about the lines automatically.
+2. Look into the routing issues.
+3. Manage caches and possibility of one line taking all traffic.
+4. Lots more to do....
